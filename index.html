@@ -18,32 +18,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="icon" type="x-icon" href="/assets/imgs/Logo/Logo.png" />
   </head>
 
   <header>
     <nav class="navbar">
-        <div class="nav-logo">
-            <img src="" alt="">
-        </div>
+      <div class="nav-logo">
+        <img src="/assets/imgs/Logo/Logo.png" alt="" />
+      </div>
 
-        <ul class="navlist">
-            <li class="nav-items">
-                <a href="#" class="nav-links">Home</a>
-            </li>
-            <li class="nav-items">
-                <a href="#" class="nav-links">About</a>
-            </li>
-            <li class="nav-items">
-                <a href="#" class="nav-links">Pets</a>
-            </li>
-            <li class="nav-items">
-                <a href="#" class="nav-links">Contacs&nbsp;Us</a>
-            </li>
-        </ul>
+      <ul class="navlist">
+        <li class="nav-items">
+          <a href="#Home" class="nav-links"
+            ><i class="fa-solid fa-house fa-sm"></i> Home</a
+          >
+        </li>
+        <li class="nav-items">
+          <a href="#" class="nav-links"
+            ><i class="fa-solid fa-user"></i> About</a
+          >
+        </li>
+        <li class="nav-items">
+          <a href="#" class="nav-links"><i class="fa-solid fa-dog"></i> Pets</a>
+        </li>
+        <li class="nav-items">
+          <a href="#" class="nav-links"
+            ><i class="fa-regular fa-address-card"></i> Contact&nbsp;Us</a
+          >
+        </li>
+      </ul>
+
+      <div class="navham">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
   </header>
 
   <body>
+    <main>
+      <div style="width: 100%; height: 100px"></div>
 
+
+      <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="/assets/imgs/Strays/costa-rica-dogs-1.jpg" alt="Nature Image #1">
+            </li>
+            <li class="slide">
+              <img src="/assets/imgs/Strays/Eating.jpg" alt="Nature Image #2">
+            </li>
+            <li class="slide">
+              <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="/src/script/main.js"></script>
+    <script src="/src/script/carousel.js"></script>
   </body>
 </html>
