@@ -1,0 +1,33 @@
+:root{
+    --trial: rgba(255, 139, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Start of Navigation Bar*/
+.navbar{
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+}
+.nav-links{
+    color: black;
+    text-decoration:none;
+}
+.nav-links:hover{
+    color: var(--trial);
+}
+/*End of Navigation Bar*/
